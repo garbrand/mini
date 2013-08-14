@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "description": "Tiny http server.",
   "main": "index.js",
+  "bin" : { "npm" : "./cli.js" },
   "scripts": {
+	"start": "forever -w ./cli.js",
     "test": "mocha"
   },
   "author": "gvdm",
